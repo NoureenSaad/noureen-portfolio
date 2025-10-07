@@ -1,7 +1,7 @@
 function openWindow(id) {
   const win = document.getElementById(id + "-window");
   if (win) {
-    win.style.display = "block";
+    win.style.display = "flex";
     win.style.zIndex = Date.now();
     makeDraggable(win);
   }

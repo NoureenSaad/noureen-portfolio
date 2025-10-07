@@ -6,9 +6,7 @@
 
 body {
   height: 100vh;
-  /* background: url('assets/bg.png') no-repeat center center fixed; */
   background-color: #e4caff;
-  /* background-size: cover; */
   font-family: 'Press Start 2P', cursive;
   cursor: url('assets/cursor.png'), auto;
 }
@@ -57,7 +55,8 @@ body {
   font-family: 'Press Start 2P', cursive;
   display: none;
   width: 420px;
-  overflow: auto;
+  flex-direction: column;
+  overflow: hidden;
   resize: both;     
   min-width: 250px;       
   min-height: 150px;
@@ -65,7 +64,19 @@ body {
   max-height: 600px;
 }
 
+.window-content {
+  flex: 1;
+  overflow-y: auto;
+  background: #c0c0c0;
+  overflow: auto;
+  resize: both;  
+  padding: 15px;
+  box-sizing: border-box;
+}
+
 .window-header {
+  position: sticky;
+  top: 0;
   background: linear-gradient(to bottom, #8203f7, #5b02ad);
   color: white;
   padding: 5px 10px;
@@ -94,31 +105,31 @@ body {
   height: 14px;
 }
 
-.window::-webkit-scrollbar {
+.window-content::-webkit-scrollbar {
   width: 18px;
   height: 18px;
 }
 
-.window::-webkit-scrollbar-track {
+.window-content::-webkit-scrollbar-track {
   background-color: #e4caff;
   border: 2px solid #000;
 }
 
-.window::-webkit-scrollbar-thumb {
+.window-content::-webkit-scrollbar-thumb {
   background-color: #fe00fe;
   border: 2px solid #000; 
 }
 
-.window::-webkit-scrollbar-thumb:hover {
+.window-content::-webkit-scrollbar-thumb:hover {
   filter: brightness(1.2);
 }
 
-.window::-webkit-scrollbar-button:single-button {
+.window-content::-webkit-scrollbar-button:single-button {
   background-color: #855cc6;
   border: 2px solid #000;
 }
 
-.window::-webkit-scrollbar-button:hover {
+.window-content::-webkit-scrollbar-button:hover {
   filter: brightness(1.2);
 }
 
