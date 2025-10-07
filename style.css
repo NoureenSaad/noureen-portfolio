@@ -54,7 +54,7 @@ body {
   box-shadow: 4px 4px 0 #222;
   font-family: 'Press Start 2P', cursive;
   display: none;
-  width: 650px;
+  width: 600px;
   height: 500px;
   flex-direction: column;
   overflow: hidden;
@@ -206,10 +206,41 @@ body {
 .project-link {
   font-size: 10px;
   color: #8203f7;
-  text-decoration: underline;
-  cursor: pointer;
+  text-decoration: none;
+  cursor: url('assets/cursor.png'), pointer;
 }
 
 .project-link:hover {
   color: #5b02ad;
+  text-decoration: underline;
+}
+
+.contact-content {
+  padding: 25px;
+  text-align: center;
+}
+
+#contact-window {
+  width: 550px;       
+  height: 250px;
+  max-width: 800px;
+  max-height: 800px;
+}
+
+.contact-content p {
+  font-size: 12px;
+  color: #000;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.contact-content a {
+  color: #8203f7;
+  text-decoration: none;
+}
+
+.contact-content a:hover {
+  color: #5b02ad;
+  text-decoration: underline;
+  cursor: url('assets/cursor.png'), pointer;
 }
