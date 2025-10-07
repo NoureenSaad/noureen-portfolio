@@ -21,20 +21,20 @@ body {
 
 .icon {
   width: 80px;
-  margin: 20px;
+  margin: 15px;
   text-align: center;
   cursor: url('assets/cursor.png'), pointer;
   transition: transform 0.2s, filter 0.2s;
 }
 
 .icon img {
-  width: 64px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
 }
 
 .icon p {
-  margin-top: 6px;
+  margin-top: 5px;
   font-size: 12px;
   color: #fff;
   text-shadow: 1px 1px 2px #000;
@@ -49,7 +49,7 @@ body {
   position: absolute;
   top: 100px;
   left: 150px;
-  background: #c0c0c0;
+  background: #e0e0e0;
   border: 2px solid #000;
   box-shadow: 4px 4px 0 #222;
   font-family: 'Press Start 2P', cursive;
@@ -68,7 +68,7 @@ body {
 .window-content {
   flex: 1;
   overflow-y: auto;
-  background: #c0c0c0;
+  background: #e0e0e0;
   overflow: auto;
   resize: both;  
   padding: 15px;
@@ -135,8 +135,8 @@ body {
 }
 
 .about-photo img {
-  width: 180px;
-  height: 180px;
+  width: 155px;
+  height: 155px;
   border: 2px solid #000;
 }
 
@@ -151,9 +151,9 @@ body {
 }
 
 .about-text h1 {
-  font-size: 14px;
+  font-size: 16px;
   color: #000;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .about-text h2 {
@@ -166,6 +166,28 @@ body {
   font-size: 10px;
   color: #000;
   line-height: 1.5;
+}
+
+.cv-section {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cv-download {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #8203f7;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.cv-download:hover {
+  color: #5b02ad;
+  transform: scale(1.05);
 }
 
 .projects-content {

@@ -14,9 +14,24 @@
       <p>About Me</p>
     </div>
 
+    <div class="icon" onclick="openWindow('education')">
+      <img src="icons/education.png" alt="Education" />
+      <p>Education</p>
+    </div>
+
+    <div class="icon" onclick="openWindow('experience')">
+      <img src="icons/experience.png" alt="Experience" />
+      <p>Experience</p>
+    </div>
+
     <div class="icon" onclick="openWindow('projects')">
       <img src="icons/projects.png" alt="Projects" />
       <p>Projects</p>
+    </div>
+
+    <div class="icon" onclick="openWindow('skills')">
+      <img src="icons/skills.png" alt="Skills" />
+      <p>Skills</p>
     </div>
 
     <div class="icon" onclick="openWindow('contact')">
@@ -26,32 +41,46 @@
   </div>
 
   <div class="window" id="about-window">
-  <div class="window-header">
-    <span>About Me</span>
-    <button class="close-btn" onclick="closeWindow('about')">
-      <img src="icons/close.png" alt="Close">
-    </button>
+    <div class="window-header">
+      <span>About Me</span>
+      <button class="close-btn" onclick="closeWindow('about')">
+        <img src="icons/close.png" alt="Close">
+      </button>
+    </div>
+    <div class="window-content about-content">
+      <div class="about-photo">
+        <img src="assets/me.jpeg" alt="My Photo">
+      </div>
+      <div class="about-text">
+        <h1>Noureen Saad</h1>
+        <h2>Software Engineer</h2>
+        <h2>Computer Science Graduate</h2>
+        <p>
+          I’m a motivated Software Engineer with a strong foundation in computer science fundamentals and problem solving. 
+          <br>I enjoy exploring different aspects of software development from building responsive interfaces and core logic
+          to ensuring software quality through structured testing.
+          <br>I value writing clean, maintainable code and continuously improving my skills to deliver efficient, 
+          user-focused solutions that balance functionality and reliability.
+        </p>
+      </div>
+      <div class="cv-section">
+        <a href="assets/Noureen_Saad_CV.pdf" download class="cv-download">Download CV</a>
+      </div>
+    </div>
   </div>
 
-  <div class="window-content about-content">
-    <div class="about-photo">
-      <img src="assets/me.jpeg" alt="My Photo">
+  <div class="window" id="experience-window">
+    <div class="window-header">
+      <span>Experience</span>
+      <button class="close-btn" onclick="closeWindow('experience')">
+        <img src="icons/close.png" alt="Close">
+      </button>
     </div>
-    <div class="about-text">
-      <h1>Noureen Saad</h1>
-      <h2>Software Engineer</h2>
-      <p>
-        I’m a motivated Software Engineer with a strong foundation in computer science fundamentals and problem solving. 
-        <br>I enjoy exploring different aspects of software development from building responsive interfaces and core logic
-        to ensuring software quality through structured testing.
-        <br>I value writing clean, maintainable code and continuously improving my skills to deliver efficient, 
-        user-focused solutions that balance functionality and reliability.
-      </p>
-    </div>
+
+
+
   </div>
-</div>
-
-
+  
   <div class="window" id="projects-window">
     <div class="window-header">
       <span>Projects</span>
@@ -83,10 +112,8 @@
         <h3 class="project-title">Laravel Registration Form</h3>
         <p class="project-description">
           <br>• Created and implemented a comprehensive <b>user registration</b> form with robust client-side and server-side validations.  
-          <br>• Applied <b>Laravel’s multi-language</b> feature to support <b>English</b> and <b>Arabic</b>, providing translation files and enabling language
- switching.
-          <br>• Utilized <b>Laravel’s Blade</b> templating engine to create a master layout, ensuring consistent headers and footers across web
- pages.
+          <br>• Applied <b>Laravel’s multi-language</b> feature to support <b>English</b> and <b>Arabic</b>, providing translation files and enabling language switching.
+          <br>• Utilized <b>Laravel’s Blade</b> templating engine to create a master layout, ensuring consistent headers and footers across web pages.
         <p class="project-tools"><b><br>Tools:</b> PHP, Laravel, MySQL, AJAX, Blade, Multi-Language, GIT.</p>
         <a class="project-link" href="http://github.com/NoureenSaad/FinalLaravel_App" target="_blank"><br>🔗 View on GitHub</a>
       </div>
@@ -120,7 +147,6 @@
         <img src="icons/close.png" alt="Close">
       </button>
     </div>
-
     <div class="window-content contact-content">
       <h5>Hi there!</h5>
       <p><br>Feel free to reach out to me through any of the links below:</p>
