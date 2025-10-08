@@ -294,11 +294,11 @@ body {
 }
 
 .course {
-  background-color: #e0e0e0;
-  border: 2px solid #ccc;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 0 #888;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0 #333;
+  margin-bottom: 15px;
+  padding: 12px;
+  background: #e0e0e0;
 }
 
 .course h4 {
@@ -315,15 +315,15 @@ body {
 
 .experience-content {
   background-color: #fff;
-  padding: 20px;
+  padding: 15px;
   overflow-y: auto;
 }
 
 .experience-item {
   border: 2px solid #000;
   box-shadow: 2px 2px 0 #333;
-  margin-bottom: 15px;
-  padding: 12px;
+  margin-bottom: 12px;
+  padding: 10px;
   background: #e0e0e0;
 }
 
