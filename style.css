@@ -12,11 +12,12 @@ body {
 }
 
 .desktop {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  padding: 30px;
 }
 
 .icon {
@@ -47,22 +48,23 @@ body {
 
 .window {
   position: absolute;
-  top: 100px;
-  left: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
   background: #e0e0e0;
   border: 2px solid #000;
   box-shadow: 4px 4px 0 #222;
   font-family: 'Press Start 2P', cursive;
   display: none;
-  width: 600px;
-  height: 500px;
-  flex-direction: column;
-  overflow: hidden;
-  resize: both;     
-  min-width: 250px;     
-  min-height: 150px;
+  width: 70vw;
+  height: 70vh;
+  min-width: 250px;
+  min-height: 200px;
   max-width: 800px;
   max-height: 800px;
+  flex-direction: column;
+  overflow: hidden;
+  resize: both;
 }
 
 .window-content {
