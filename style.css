@@ -124,8 +124,8 @@ body {
 }
 
 .window-header button img {
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
 }
 
 .window-content::-webkit-scrollbar {
@@ -205,7 +205,7 @@ body {
   text-decoration: none;
   color: #8203f7;
   font-size: 16px;
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .cv-download:hover {
@@ -228,6 +228,7 @@ body {
   margin-bottom: 12px;
   box-shadow: 2px 2px 0 #333;
   user-select: none;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .project:hover {
@@ -259,7 +260,7 @@ body {
   font-size: 16px;
   color: #8203f7;
   text-decoration: none;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
   cursor: url('assets/cursor.png'), pointer;
 }
 
@@ -299,7 +300,7 @@ body {
 .contact-content a {
   display: inline-block;
   color: #8203f7;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
   text-decoration: none;
 }
 
@@ -337,10 +338,11 @@ body {
   margin-bottom: 15px;
   padding: 12px;
   background: #e0e0e0;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .course:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
 }
 
 .course h4 {
@@ -366,6 +368,7 @@ body {
   margin-bottom: 12px;
   padding: 10px;
   background: #e0e0e0;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .experience-item:hover {
@@ -392,7 +395,7 @@ body {
   color: #8203f7;
   text-decoration: none;
   margin-top: 8px;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
   cursor: url('assets/cursor.png'), pointer;
 }
 
@@ -423,6 +426,7 @@ body {
   margin-bottom: 12px;
   box-shadow: 2px 2px 0 #222;
   user-select: none;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .skills-icons {
@@ -450,11 +454,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skills-section:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
 }
 
 .skills-section h3 {
@@ -485,6 +488,7 @@ body {
   box-shadow: 2px 2px 0 #222;
   user-select: none;
   gap: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .activity-content {
@@ -511,6 +515,65 @@ body {
   object-fit: contain;
 }
 
+.certificates-content {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.certificates-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.certificate-card {
+  background: #e0e0e0;
+  border: 2px solid #000;
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  box-shadow: 2px 2px 0 #222;
+}
+
+.certificate-card:hover {
+  transform: scale(1.05);
+}
+
+.certificate-logo {
+  width: auto;
+  height: 60px;
+  color: white;
+  border: 2px solid #222;
+  box-shadow: 2px 2px 0 #222;
+  background: #fff;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.certificate-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.certificate-link {
+  color: #5b02ad;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.certificate-link:hover {
+  text-decoration: underline;
+  color: #8203f7;
+}
 
 @media (max-width: 800px) {
   .icon-card {
