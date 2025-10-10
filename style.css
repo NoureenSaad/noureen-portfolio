@@ -183,7 +183,7 @@ body {
 .about-text h2 {
   font-size: 18px;
   color: #333;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .about-text p {
@@ -192,8 +192,37 @@ body {
   line-height: 1.6;
 }
 
+.leetcode-section {
+  text-align: center;
+}
+
+.leetcode-intro {
+  color: #222;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.leetcode-link {
+  display: inline-block;
+  align-items: center;
+  background: #fff;
+  color: #8203f7;
+  border: 2px solid #000;
+  padding: 6px;
+  text-decoration: none;
+  box-shadow: 2px 2px 0 #000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.leetcode-link:hover {
+  color: #5b02ad;
+  transform: scale(1.05);
+  cursor: url('assets/cursor.webp'), pointer;
+}
+
 .cv-section {
-  margin-top: 8px;
+  justify-content: center;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -204,13 +233,14 @@ body {
   align-items: center;
   text-decoration: none;
   color: #8203f7;
-  font-size: 16px;
+  font-size: 20px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .cv-download:hover {
   color: #5b02ad;
   transform: scale(1.05);
+  text-decoration: underline;
   cursor: url('assets/cursor.webp'), pointer;
 }
 
